@@ -28,7 +28,7 @@ var server = http.createServer(function (request, response) {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <style src="/x"></style>
+        <link rel="stylesheet" href="./x">
     </head>
     
     <body>
