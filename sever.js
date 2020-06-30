@@ -20,8 +20,22 @@ var server = http.createServer(function (request, response) {
   console.log("有个傻子发请求过来啦！路径（带查询参数）为：" + pathWithQuery);
   if (path === "/") {
     response.statusCode = 200;
-    response.setHeader("Content-Type", "text/html;charset=utf-8");
-    response.write(`吴苏苏 love `);
+    response.setHeader("Content-html", "text/html;charset=utf-8");
+    response.write(`<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style src="/x"></style>
+    </head>
+    
+    <body>
+        <h1>吴苏苏 love</h1>
+    </body>
+    
+    </html> `);
     response.end();
   } else if (path === "/x") {
     response.statusCode = 200;
