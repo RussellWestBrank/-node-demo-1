@@ -21,7 +21,7 @@ var server = http.createServer(function (request, response) {
   if (path === "/") {
     response.statusCode = 200;
     response.setHeader("Content-Type", "text/html;charset=utf-8");
-    response.write(`吴苏苏 love node-demo-1`);
+    response.write(`吴苏苏 love `);
     response.end();
   } else if (path === "/x") {
     response.statusCode = 200;
